@@ -3,11 +3,14 @@
 Overview
 --------
 
-
 Settings Commands
 --------
 
 ori sep <separator>
+
+  set the multi-command separator. This should match what is done
+  in CONFIG SEPARATOR <separator>.
+
 ori priogags <on|off>
 ori settings
 ori lustlist <add|remove> <person>
@@ -24,11 +27,24 @@ Defence Commands
 -------
 
 defup
+
+  Configure defences up as appropriate
+
 ldd
+
 edit defup
+
+  edit initial bring-up defences, click on them as needed
+
 edit keepup
+
+  edit keepup defences, click on them as needed
 def sets
+
 defl
+
+  List current defences
+
 
 NDB Commands
 ----
