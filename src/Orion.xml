@@ -2665,7 +2665,7 @@ ori.checkTattoos()
 							<integer>3</integer>
 						</regexCodePropertyList>
 					</Trigger>
-					<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 						<name>Bad legs</name>
 						<script>svo.valid.bad_legs()</script>
 						<triggerType>0</triggerType>
@@ -6104,7 +6104,7 @@ ori.core()</script>
   ori.ndb.correctPerson = true
 end</script>
 					<triggerType>0</triggerType>
-					<conditonLineDelta>1</conditonLineDelta>
+					<conditonLineDelta>2</conditonLineDelta>
 					<mStayOpen>25</mStayOpen>
 					<mCommand></mCommand>
 					<packageName></packageName>
@@ -6114,11 +6114,13 @@ end</script>
 					<colorTriggerFgColor>#000000</colorTriggerFgColor>
 					<colorTriggerBgColor>#000000</colorTriggerBgColor>
 					<regexCodeList>
-						<string>^(.+) \((?:female|male) .+\)\.$</string>
+						<string>^(.+) \((?:female|male|non\-binary) .+\)\.$</string>
+						<string>---------------------------</string>
 						<string>^(\w+ date of birth is hidden by the sand of Aeon\.$|\w+ is \d+ years old, having been born on the)</string>
 					</regexCodeList>
 					<regexCodePropertyList>
 						<integer>1</integer>
+						<integer>3</integer>
 						<integer>1</integer>
 					</regexCodePropertyList>
 					<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
